@@ -1,0 +1,26 @@
+Program made for TP-LINK TD-W8968
+work with other models? Probably not.
+
+I created this program to fix this issue:
+ Frequently my WAN connection of ADSL router
+ goes down, and not reconnect. I tried to use
+ the last version of router firmware but it
+ doesn't work. Also, sometimes the status
+ of WAN is Connected, but it isn't (ISP problem?).
+
+This program check if have internet access,
+if not, it do commands in the router to
+connect/reconnect WAN interface. These commands
+you can do using a web interface, this program
+automatize this.
+
+The best way to use this program is with Cron.
+
+Configurations are in config.py
+
+
+Requirements:
+ python-chardet
+ python-six
+ python-beautifulsoup
+ python-requests (>=2.2.1)
